@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --white:white;
+  --blue:#0080ff;
+  --navy:#111B3C;
+  --orange:#ff7f00;
+}
+
+body {
+    margin : 0;
+    background-color: var(--blue);
+    text-align: center;
+    color: var(--white);
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--orange);
+    border: 3px solid var(--white);
+    color: var(--navy);
+}
+
+input {
+    background-color: var(--navy);
+    color: var(--white);
+    border: 1px solid var(--white)  
+}
+
+.bold {
+    font-weight: bold;
+}
