@@ -5,4 +5,5 @@ const calculate = () => {
     const numbers = array.map(el =>{
         Number(value); 
     });
+    const filtered = numbers.filter();
 }
