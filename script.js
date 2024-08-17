@@ -3,6 +3,7 @@ const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length
 
 // Add getMedian function: The median is the midpoint of a set of numbers
 const getMedian = (array) => {
+    const sorted = array.sort();
 
 }
  
