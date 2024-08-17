@@ -1,8 +1,6 @@
 // Add mean function: The mean is the average value of all numbers in a list
 const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
-    
-
-
+ 
 // Add calculate function
 const calculate = () => {
     const value = document.querySelector("#numbers").value; // value input
