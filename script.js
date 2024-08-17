@@ -1,5 +1,6 @@
-// Write mean logic
+// Write mean logic : The mean is the average value of all numbers in a list
 const getMean = (array) => {
+    const sum = array.reduce();
 
 }
 
