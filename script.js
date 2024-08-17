@@ -1,8 +1,6 @@
 // Write mean logic : The mean is the average value of all numbers in a list
 const getMean = (array) => {
-    const sum = array.reduce((acc, el) => {
-        return acc + el;
-    });
+    const sum = array.reduce((acc, el) => acc + el, 0);
 
 }
 
