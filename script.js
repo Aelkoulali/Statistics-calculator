@@ -3,7 +3,7 @@ const calculate = () => {
     const value = document.querySelector("#numbers").value; // value input
     const array = value.split(/,\s*/g);  
     const numbers = array.map(el =>{
-        Number(value); 
+        Number(el); 
     });
-    const filtered = numbers.filter();
+    const filtered = numbers.filter(el => !NaN(el));
 }
