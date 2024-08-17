@@ -1,5 +1,10 @@
 // Add mean function: The mean is the average value of all numbers in a list
 const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
+
+// Add getMedian function: The median is the midpoint of a set of numbers
+const getMedian = (array) => {
+
+}
  
 // Add calculate function
 const calculate = () => {
