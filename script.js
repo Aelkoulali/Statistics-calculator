@@ -18,6 +18,7 @@ const getMode = (array) => {
         return null;
     }
     const highest = Object.keys(counts).sort((a,b) => counts[b] - counts[a])[0]; // [0] access the first element in the array
+    const mode = Object.keys(counts);
 }
 
 // Add calculate function
