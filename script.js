@@ -13,6 +13,7 @@ const getMedian = (array) => {
 // Add getMode function
 const getMode = (array) => {
     const counts = {};
+    return array;
 }
 
 // Add calculate function
