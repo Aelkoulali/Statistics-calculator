@@ -30,9 +30,11 @@ const calculate = () => {
     
     const mean = getMean(numbers);
     const median = getMedian(numbers);
+    const mode = getMode(numbers);
 
     document.querySelector("#mean").textContent = mean; // display value of mean 
     document.querySelector("#median").textContent = median;
+    document.querySelector("#mode").textContent = mode;
 
 }
 
