@@ -13,14 +13,7 @@ const getMedian = (array) => {
 // Add getMode function
 const getMode = (array) => {
     const counts = {};
-    array.forEach((el) => {
-        if (counts[el]) {
-            counts[el] += 1;
-        } else {
-            counts[el] = 1;
-        }
-    })
-    return counts;
+    array.forEach(el => counts[el] = (counts[el] || 0) + 1)
 }
 
 // Add calculate function
@@ -66,4 +59,17 @@ numbersArr.forEach((el) => {
 Check if the current number is already in the counts object. If it is, increment it by 1. If it is not, set it to 1.
 Resulting object. The keys are the numbers from the array and the values are the number of times each number appears in the list:
 { 1: 3, 2: 3, 3: 3, 4: 3, 5: 2 }
+*/
+
+/*
+array.forEach(el => counts[el] = (counts[el] || 0) + 1)
+                       ===
+
+array.forEach((el) => {
+        if (counts[el]) {
+            counts[el] += 1;
+        } else {
+            counts[el] = 1;
+        }
+    })
 */
