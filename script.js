@@ -6,7 +6,7 @@ const getMedian = (array) => {
     const sorted = array.sort((a,b) => { return a - b;});
     // check if the length of array is even, find the middle two numbers, calculate their mean & return the result.
     return !(array.length % 2) ? getMean([sorted[sorted.length / 2 - 1], sorted[sorted.length / 2]])
-    : sorted[Math.floor(sorted.length / 2)]
+                               : sorted[Math.floor(sorted.length / 2)] // if the length of array is odd, return the middle number
 
 }
  
@@ -17,6 +17,8 @@ const calculate = () => {
     const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));
     const mean = getMean(numbers);
     document.querySelector("#mean").textContent = mean; // display value of mean  
+    const median = getMedian(numbers);
+    document.querySelector("#median").textContent = median;
 
 }
 
