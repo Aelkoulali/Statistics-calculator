@@ -9,7 +9,10 @@ const getMedian = (array) => {
                                : sorted[Math.floor(sorted.length / 2)] // if the length of array is odd, return the middle number
 
 }
- 
+
+// Add getMode function
+const getMode = (array) => {}
+
 // Add calculate function
 const calculate = () => {
     const value = document.querySelector("#numbers").value; // value input
