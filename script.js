@@ -1,4 +1,4 @@
-// Add mean function: The mean is the average value of all numbers in a list
+// Add getMean function: The mean is the average value of all numbers in a list
 const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
 
 // Add getMedian function: The median is the midpoint of a set of numbers
@@ -20,6 +20,11 @@ const getMode = (array) => {
     const highest = Object.keys(counts).sort((a,b) => counts[b] - counts[a])[0]; // [0] access the first element in the array
     const mode = Object.keys(counts).filter((el) => counts[el] === counts[highest]);
     return mode.join(", ");
+}
+
+// Add getRange function : The difference between the largest and smallest numbers in the list
+const getRange = (array) => {
+
 }
 
 // Add calculate function
