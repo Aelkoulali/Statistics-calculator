@@ -3,7 +3,7 @@ const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length
 
 // Add getMedian function: The median is the midpoint of a set of numbers
 const getMedian = (array) => {
-    const sorted = array.sort((a,b) => { return a - b;});
+    const sorted = array.slice().sort((a,b) => { return a - b;});
     // check if the length of array is even, find the middle two numbers, calculate their mean & return the result.
     return !(array.length % 2) ? getMean([sorted[sorted.length / 2 - 1], sorted[sorted.length / 2]])
                                : sorted[Math.floor(sorted.length / 2)] // if the length of array is odd, return the middle number
@@ -43,6 +43,7 @@ const getVariance = (array) => {
 const getStandardDeviation = (array) => {
     const variance = getVariance(array);
     const standardDeviation  = Math.sqrt(variance);
+    return standardDeviation;
 }
 // Add calculate function
 const calculate = () => {
@@ -55,12 +56,14 @@ const calculate = () => {
     const mode = getMode(numbers);
     const range = getRange(numbers);
     const variance = getVariance(numbers);
+    const standardDeviation = getStandardDeviation(numbers);
 
     document.querySelector("#mean").textContent = mean; // display value of mean 
     document.querySelector("#median").textContent = median;
     document.querySelector("#mode").textContent = mode;
     document.querySelector("#range").textContent = range;    
     document.querySelector("#variance").textContent = variance;
+    document.querySelector("#standardDeviation").textContent = standardDeviation;
 }
 
 
@@ -105,4 +108,8 @@ array.forEach((el) => {
             counts[el] = 1;
         }
     })
+*/
+
+/*
+The empty .slice() call will make a shallow copy of the array, which you are free to mutate.
 */
