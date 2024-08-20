@@ -42,7 +42,7 @@ const getVariance = (array) => {
 // Add getStandardDeviation function : The square root of the variance.
 const getStandardDeviation = (array) => {
     const variance = getVariance(array);
-    const standardDeviation  = Math.pow(variance, 1/2);
+    const standardDeviation  = Math.sqrt(variance);
 }
 // Add calculate function
 const calculate = () => {
