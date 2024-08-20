@@ -39,6 +39,10 @@ const getVariance = (array) => {
     return variance;   
 } 
 
+// Add getStandardDeviation function : The square root of the variance.
+const getStandardDeviation = (array) => {
+    const variance = getVariance(array);
+}
 // Add calculate function
 const calculate = () => {
     const value = document.querySelector("#numbers").value; // value input
