@@ -31,6 +31,7 @@ const getRange = (array) => {
 // Add getVariance function : The variance of a series represents how much the data deviates from the mean, and can be used to determine how spread out the data are
 const getVariance = (array) => {
     const mean = getMean(array);
+    const differences = array.map((el) => el -mean);
 } 
 
 // Add calculate function
