@@ -3,8 +3,14 @@ In this project, App perform statistical calculations like mean, median, mode, v
 Uses `Array manipulations methods` like `map()` `reduce()` `filter()`
 
 ## ✅ Key Concepts
+-
+-
+-
 
 ## 🛠️ Tech Stack
+-
+-
+-
 
 ▶️ How to Run
 -  Open `index.html` in your browser.
