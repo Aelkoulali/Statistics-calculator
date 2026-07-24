@@ -13,6 +13,8 @@ Uses `Array manipulations methods` like `map()` `reduce()` `filter()`
 - JavaScript
 
 ▶️ How to Run
--  Open `index.html` in your browser.
+1. Open index.html in your browser.
+2. Enter comma-separated numbers (example: 1, 2, 2, 3, 4)
+3. Click Calculate to see the results.
 
 
