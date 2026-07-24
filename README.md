@@ -12,8 +12,8 @@ In this project, the app performs statistical calculations like mean, median, mo
 - JavaScript
 
 ▶️ How to Run
-1. Open index.html in your browser.
-2. Enter comma-separated numbers (example: 1, 2, 2, 3, 4)
+1. Open `index.html` in your browser.
+2. Enter comma-separated numbers (example:` 1, 2, 2, 3, 4`)
 3. Click Calculate to see the results.
 
 
