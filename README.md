@@ -1,6 +1,5 @@
 # 🗂️ Statistics Calculator 📊
-In this project, App perform statistical calculations like mean, median, mode, variance, and standard deviation.
-Uses `Array manipulations methods` like `map()` `reduce()` `filter()`
+In this project, the app performs statistical calculations like mean, median, mode, variance, and standard deviation. It uses JavaScript array methods such as map(), reduce(), and filter() to process the input.
 
 ## ✅ Key Concepts
 - map( )
